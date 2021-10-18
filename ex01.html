@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src='jquery-3.6.0.min.js'></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script type="text/javascript">
+        $(document).ready(function(){
+                //내용을 실행해 주세요
+                console.log('111')
+        })
+        $().ready(function(){
+                console.log('222')
+        })
+        $(function(){
+                console.log('333')
+                $("button").click(function(){
+                        //$("p").hide()
+                })
+                $("#show").click(function(){
+                        $("p").show()
+                })
+        })
+        function my_show(){
+                console.log("aaa")
+                $("#p").hide()
+                document.getElementById("p").style.display='none'
+        }
+</script>
+</head>
+<body>
+        <p id="p">안녕하세요</p>
+        <button onclick="my_show()">클릭</button>
+        <button id="show">보임</button>
+</body>
+</html>
